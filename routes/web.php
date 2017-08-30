@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::get('/success.html', function () {
+    return view('success');
+});
+Route::get('/form/love', 'Form\LoveController@post');
